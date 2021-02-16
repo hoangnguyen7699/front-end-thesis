@@ -98,7 +98,7 @@ function App() {
     setOpen(true);
     setSelectedTab(1);
     axios
-      .post(`http://localhost:3100/upfile?distance=${distance}`, data, {})
+      .post(`https://168.62.170.209/upfile?distance=${distance}`, data, {})
       .then((res) => {
         const { noErrorArr, errorArr } = res.data;
         const errorFiles = errorArr.map((e) => {
